@@ -1,0 +1,36 @@
+.contentMain {
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.newRealiseGame {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardsGame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.newRealiseGame > h2 {
+    font-size: 40px;
+}
+.newRealiseGame > h2,
+.cardGame > h3
+{
+    color: #F5F5F7;
+}
+.cardGame > h3 {
+    padding: 25px 10px;
+    border-radius: 20px;
+    background-color: rgb(191, 156, 255);
+    z-index: 1;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+.cardGame {
+
+}

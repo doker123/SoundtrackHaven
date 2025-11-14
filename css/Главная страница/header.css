@@ -1,0 +1,29 @@
+.iconHome {
+    font-size: 40pt;
+    color: #F5F5F7;
+}
+.generalMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    width: 100px;
+    background-color: #bf9cff;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    left: 0;
+}
+.generalMenu > nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    gap: 50px;
+    vertical-align: center;
+}
+.iconNav {
+    width: 39px;
+}
+.bodyIndex {
+    background-color: #3F3F40;
+}
