@@ -1,0 +1,10 @@
+.footerContent {
+    background-color: #A67BF5;
+    margin-left: 100px;
+    height: 300px;
+}
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

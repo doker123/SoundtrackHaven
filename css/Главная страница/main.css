@@ -1,8 +1,10 @@
+/*Секция 1*/
 .contentMain {
-    margin-left: 160px;
     display: flex;
     flex-direction: column;
     gap: 70px;
+    margin-left: 100px;
+    padding-top: 70px;
 }
 .newRealiseGame {
     display: flex;
@@ -12,17 +14,17 @@
 .cardsGame {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.newRealiseGame > h2 {
+.contentMain  h2 {
     font-size: 40px;
 }
-.newRealiseGame > h2,
-.cardGame > h3
+.contentMain  h2,
+.contentMain  p
 {
     color: #F5F5F7;
 }
-.cardGame > h3 {
+.cardGame > p {
     padding: 25px 10px;
     border-radius: 20px;
     background-color: rgb(191, 156, 255);
@@ -30,7 +32,59 @@
     position: relative;
     bottom: 50px;
     text-align: center;
+    font-size: 25px;
 }
-.cardGame {
-
+/*Секция 2*/
+.popularPlaylist {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardPlaylist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Секция 3*/
+.authorMusic {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardAuthor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Секция 4*/
+.trekLists {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.trekListRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trekList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cardTrack {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.descriptionTrack {
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.descriptionTrack >p:first-child {
+    font-size: 18px;
+}
+.descriptionTrack > p:last-child {
+    font-size: 14px;
 }

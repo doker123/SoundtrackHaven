@@ -1,5 +1,7 @@
-@import "header.css";
+@import "../Общие стили страниц/header.css";
 @import "main.css";
+@import "../Общие стили страниц/footer.css";
+@import "../Общие стили страниц/musicBar.css";
 
 
 * {
@@ -15,6 +17,10 @@ p {
     color: white;
 }
 .wrapper {
-    width: 80%;
-    margin: auto;
+    width: 95%;
+    max-width: 1640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
