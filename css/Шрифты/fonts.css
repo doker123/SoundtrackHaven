@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Inter'; /* Укажите желаемое имя семейства шрифта */
+    src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('woff2'); /* Путь к файлу и формат */
+    font-weight: 400; /* Укажите вес (normal) */
+    font-style: normal; /* Укажите стиль (normal или italic) */
+    font-display: swap; /* Рекомендуется для улучшения производительности */
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('woff2');
+    font-weight: 700; /* Укажите вес (bold) */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Добавьте другие начертания по мере необходимости */
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

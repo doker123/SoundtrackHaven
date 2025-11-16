@@ -1,0 +1,28 @@
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-left: 100px;
+}
+#searchInput {
+    width: 1600px;
+    padding: 15px;
+    background-color: #bf9cff;
+    max-width: 1600px;
+}
+#searchInput::placeholder {
+    color: #F5F5F7;
+    font-size: 20px;
+}
+.searchInputButton {
+    background-color: #8E51FF;
+}
+.searchInputButton >img {
+    width: 49px;
+    height: 49px;
+}
+.findMusic > form > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

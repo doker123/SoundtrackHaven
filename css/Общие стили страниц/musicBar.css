@@ -1,0 +1,159 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Плеер, прижатый к низу */
+.audioPlayer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #BF9CFFFF;
+    padding: 20px;
+    z-index: 1000;
+    margin: 0 0 auto 100px;
+}
+
+/* Скрытие нативного аудио */
+#audio-player-element {
+    display: none;
+}
+
+/* Прогресс-бар */
+.progressContainer {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    margin: 15px 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+.progress-fill {
+    position: absolute;
+    height: 100%;
+    background: #ffd700;
+    border-radius: 3px;
+    transition: width 0.1s linear;
+}
+
+.progress-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+}
+
+.progress-thumb:active {
+    cursor: grabbing;
+}
+
+/* Элементы управления */
+.controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    max-width: 90%;
+
+}
+
+.time {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    min-width: 85px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.control-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.08);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.play-pause {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.like {
+    color: #cccccc;
+}
+
+.like.active {
+    color: #ff3b3b;
+}
+
+.volume-icon {
+    font-size: 20px;
+    background: transparent;
+    width: auto;
+    box-shadow: none;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .audioPlayer {
+        padding: 15px;
+        max-width: none;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .controls {
+        gap: 12px;
+    }
+
+    .control-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .play-pause {
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+    }
+}

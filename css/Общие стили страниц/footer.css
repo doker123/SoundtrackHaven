@@ -8,3 +8,14 @@
     flex-direction: column;
     gap: 25px;
 }
+.aboutUsLinks {
+    display: flex;
+    gap: 30px;
+}
+.aboutUsLinks > a {
+    font-size: 20px;
+    color: #F5F5F7;
+}
+.paragraphFooter {
+    font-size: 18px;
+}

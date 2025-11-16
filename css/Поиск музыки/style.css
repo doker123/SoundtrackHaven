@@ -2,7 +2,8 @@
 @import "../Общие стили страниц/footer.css";
 @import "../Общие стили страниц/musicBar.css";
 @import "../Шрифты/fonts.css";
-@import "main.css";
+@import "../Поиск музыки/main.css";
+
 
 * {
     margin: 0;
