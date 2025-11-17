@@ -13,7 +13,8 @@
 }
 .cardsGame {
     display: flex;
-    flex-wrap: wrap;
+    overflow: auto;
+
     justify-content: space-between;
 }
 .contentMain  h2 {
@@ -42,7 +43,7 @@
 }
 .cardPlaylist {
     display: flex;
-    flex-wrap: wrap;
+    overflow: auto;
     justify-content: space-between;
 }
 /*Секция 3*/
@@ -53,7 +54,7 @@
 }
 .cardAuthor {
     display: flex;
-    flex-wrap: wrap;
+    overflow: auto;
     justify-content: space-between;
 }
 /*Секция 4*/
@@ -87,4 +88,19 @@
 }
 .descriptionTrack > p:last-child {
     font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .trekListRow,
+    .trekList {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contentMain {
+        margin: 100px 0 0 0;
+    }
+    .cardsGame {
+        gap: 10px;
+    }
+
 }

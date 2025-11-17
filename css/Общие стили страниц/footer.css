@@ -1,7 +1,7 @@
 .footerContent {
     background-color: #A67BF5;
     margin-left: 100px;
-    height: 300px;
+    margin-bottom: 146px;
 }
 .aboutUs {
     display: flex;
@@ -18,4 +18,9 @@
 }
 .paragraphFooter {
     font-size: 18px;
+}
+@media (max-width: 600px) {
+    .footerContent {
+        margin: 0;
+    }
 }

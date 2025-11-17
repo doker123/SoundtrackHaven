@@ -106,9 +106,7 @@
     transform: scale(1.08);
 }
 
-.control-btn:active {
-    transform: scale(0.95);
-}
+
 
 .play-pause {
     width: 50px;
@@ -139,6 +137,7 @@
         padding: 15px;
         max-width: none;
         border-radius: 10px 10px 0 0;
+        margin: 0;
     }
 
     .controls {
@@ -152,8 +151,8 @@
     }
 
     .play-pause {
-        width: 46px;
-        height: 46px;
+        width: 23px;
+        height: 23px;
         font-size: 20px;
     }
 }
