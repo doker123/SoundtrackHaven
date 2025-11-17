@@ -2,7 +2,7 @@
     font-size: 40pt;
     color: #F5F5F7;
 }
-.generalMenu {
+.navigateMenu {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -14,7 +14,7 @@
     align-items: center;
     left: 0;
 }
-.generalMenu > nav {
+.navigateMenu > nav {
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
