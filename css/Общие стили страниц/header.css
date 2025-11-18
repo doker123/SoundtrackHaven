@@ -15,7 +15,7 @@
     align-items: center;
     left: 0;
     top: 0;
-    z-index: 1000; /* Чтобы меню было поверх других элементов */
+    z-index: 1000;
 }
 
 .generalMenu > nav {
@@ -29,6 +29,10 @@
 .iconNav {
     width: 39px;
 }
+.userProfile > img {
+    width: 100px;
+    height: 100px;
+}
 
 /* === Адаптивность для мобильных устройств === */
 @media (max-width: 600px) {
@@ -40,7 +44,7 @@
         top: 0;
         left: 0;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -48,13 +52,17 @@
         flex-direction: row;
         flex-basis: auto;
         justify-content: space-between;
+        gap: 20px;
     }
-
     .iconHome {
-        font-size: 32pt;
+        font-size: 3rem;
     }
 
     .iconNav {
-        width: 30px;
+        width: 1.5rem;
+    }
+    .userProfile > img {
+        width: 5.5rem;
+        height: 5.5rem;
     }
 }

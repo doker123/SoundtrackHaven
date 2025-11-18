@@ -1,7 +1,7 @@
 .footerContent {
     background-color: #A67BF5;
     margin-left: 100px;
-    margin-bottom: 146px;
+    margin-bottom: 174px;
 }
 .aboutUs {
     display: flex;
@@ -21,6 +21,6 @@
 }
 @media (max-width: 600px) {
     .footerContent {
-        margin: 0;
+        margin: 0 0 149px;
     }
 }

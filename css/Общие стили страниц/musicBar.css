@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 .audioPlayer {
     position: fixed;
     bottom: 0;
@@ -51,12 +44,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
     width: 16px;
     height: 16px;
     background: #ffffff;
-    border: 2px solid #ffd700;
+    border: 3px solid #ffd700;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     cursor: grab;
 }
 
@@ -69,18 +62,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 24px 0;
     max-width: 90%;
 
-}
-
-.time {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    min-width: 85px;
-    text-align: center;
 }
 
 .controls {
@@ -98,33 +82,19 @@
     color: #000000;
     font-size: 18px;
     cursor: pointer;
-    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.control-btn:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.08);
-}
-
-
-
 .play-pause {
     width: 50px;
     height: 50px;
-    background: #ffffff;
     font-size: 22px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .like {
     color: #cccccc;
-}
-
-.like.active {
-    color: #ff3b3b;
 }
 
 .volume-icon {
@@ -134,25 +104,41 @@
     box-shadow: none;
 }
 
-/* Адаптивность */
+@media (max-width: 768px) {
+    .controls-container {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .controls-container button {
+        width: 25px;
+        height: 25px;
+    }
+    .progressContainer {
+        width: 80%;
+    }
+}
+
 @media (max-width: 600px) {
     .audioPlayer {
-        padding: 15px;
-        max-width: none;
-        border-radius: 10px 10px 0 0;
+        padding: 20px;
+        max-width: 100%;
+        width: 100%;
         margin: 0;
     }
 
     .controls {
-        gap: 12px;
+        gap: 10px;
     }
 
     .control-btn {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
     }
-
+    .control-btn > img {
+        width: 24px;
+        height: 24px;
+    }
     .play-pause {
         width: 23px;
         height: 23px;
