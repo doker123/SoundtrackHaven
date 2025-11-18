@@ -3,11 +3,21 @@
     flex-direction: column;
     gap: 70px;
     margin-left: 100px;
+    padding-top: 70px;
+    margin-bottom: 100px;
 }
 .findMusic {
     width: 100%;
-    padding: 0 20px;
     box-sizing: border-box;
+}
+
+.contentMain  h2 {
+    font-size: 2rem;
+}
+.contentMain  h2,
+.contentMain  p
+{
+    color: #F5F5F7;
 }
 
 .findMusic > form {
@@ -16,12 +26,11 @@
 
 .searchInputFlex {
     display: flex;
-    gap: 10px;
     width: 100%;
 }
 
 #searchInput {
-    flex: 1; /* Занимает всё доступное пространство */
+    flex: 1;
     min-width: 0;
     padding: 20px;
     background-color: #BF9CFF;
@@ -44,7 +53,7 @@
     color: #F5F5F7;
     font-size: 16px;
     cursor: pointer;
-    flex-shrink: 0; /* Кнопка не сжимается */
+    flex-shrink: 0;
 }
 
 .searchInputButton:hover {
@@ -62,7 +71,48 @@
     white-space: nowrap;
     border: 0;
 }
+/*Секция 2*/
 
+.popularPlaylist {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.popularPlaylistRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cardTrackRow {
+    display: flex;
+    justify-content: space-between;
+
+}
+.cardTrackLeft {
+    display: flex;
+
+}
+.cardTrackParagraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.cardTrackParagraph >p:first-child {
+    font-size: 1.3rem;
+}
+.cardTrackParagraph > p:last-child {
+    font-size: 1rem;
+}
+.settingsRow {
+    display: flex;
+    gap:30px;
+}
+.settingsIcon {
+    width: 30px;
+    height: 30px;
+}
 /* Адаптивность для планшетов */
 @media (max-width: 1024px) {
     #searchInput {
