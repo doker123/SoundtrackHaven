@@ -1,12 +1,14 @@
 .footerContent {
     background-color: #A67BF5;
     margin-left: 100px;
-    margin-bottom: 174px;
+    padding-bottom: 150px;
 }
 .aboutUs {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    flex-wrap: wrap;
+
 }
 .aboutUsLinks {
     display: flex;
@@ -18,11 +20,11 @@
     text-decoration: underline;
 }
 .paragraphFooter {
-    font-size: 18px;
+    font-size: 1rem;
 }
 @media (max-width: 600px) {
     .footerContent {
-        margin: 0 0 149px;
+        margin: 0;
     }
     .aboutUsLinks {
         display: flex;

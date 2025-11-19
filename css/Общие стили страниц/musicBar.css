@@ -5,8 +5,7 @@
     right: 0;
     width: 95%;
     background: #BF9CFFFF;
-    padding: 20px;
-    z-index: 1000;
+    z-index: 9;
     margin: 0 0 auto 100px;
     display: flex;
     flex-direction:column;
@@ -71,7 +70,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
     max-width: 90%;
 
 }
@@ -151,6 +149,6 @@
     .play-pause {
         width: 23px;
         height: 23px;
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 }

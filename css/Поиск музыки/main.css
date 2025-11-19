@@ -83,6 +83,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/*Секция 3*/
+.resultSearch {
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+.gapTrack {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
 
 .cardTrackRow {
     display: flex;
@@ -91,6 +102,7 @@
 }
 .cardTrackLeft {
     display: flex;
+    gap: 30px;
 
 }
 .cardTrackParagraph {
@@ -108,10 +120,34 @@
 .settingsRow {
     display: flex;
     gap:30px;
+    align-items: center;
 }
 .settingsIcon {
     width: 30px;
     height: 30px;
+}
+.pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.pagination > div {
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.pagination > div > a {
+    color: #F5F5F7;
+}
+.paginationBtn {
+    background: rgba(245, 245, 247, 0);
+    border: none;
+    color: #F5F5F7;
+    align-items: center;
+    text-decoration: underline;
+}
+.paginationBtn:active {
+    text-decoration: none;
 }
 /* Адаптивность для планшетов */
 @media (max-width: 1024px) {
@@ -133,6 +169,13 @@
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 600px) {
+    .findMusic {
+        margin-top:100px ;
+    }
+    .popularPlaylistRow > a > img {
+        width: 200px;
+        height: 200px;
+    }
     .searchInputFlex {
         flex-direction: column;
         align-items: stretch;
