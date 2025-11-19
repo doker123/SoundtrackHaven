@@ -76,13 +76,14 @@
 .popularPlaylist {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 10px;
 }
 .popularPlaylistRow {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 /*Секция 3*/
 .resultSearch {
     display: flex;
@@ -149,13 +150,18 @@
 .paginationBtn:active {
     text-decoration: none;
 }
+@media (max-width: 1440px) {
+    .imgPlaylist {
+        width: 250px;
+        height: 250px;
+    }
+}
 /* Адаптивность для планшетов */
 @media (max-width: 1024px) {
     #searchInput {
         padding: 16px;
         font-size: 18px;
     }
-
     .searchInputButton {
         width: 100px;
         height: 58px;
@@ -164,6 +170,15 @@
 
     .searchInputFlex {
         gap: 8px;
+    }
+
+    .imgPlaylist {
+        width: 200px;
+        height: 200px;
+    }
+    .popularPlaylistRow {
+        flex-wrap: nowrap;
+        overflow: auto;
     }
 }
 
@@ -200,5 +215,21 @@
 @media (max-width: 600px) {
     .contentMain {
         margin: 0;
+    }
+    .time {
+        font-size: 0.7rem;
+    }
+    .settingsRow {
+        gap: 1rem;
+    }
+    .settingsIcon{
+        width:1rem;
+        height: 1rem;
+    }
+    .cardTrackParagraph >p:first-child {
+        font-size: 1rem;
+    }
+    .cardTrackParagraph > p:last-child {
+        font-size: 0.7rem;
     }
 }
