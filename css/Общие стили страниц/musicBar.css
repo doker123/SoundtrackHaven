@@ -3,7 +3,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    width: 95%;
+    width: 100%;
     background: #BF9CFFFF;
     z-index: 9;
     margin: 0 0 auto 100px;
@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 95%;
+    width: 100%;
 }
 .nameTrack {
     font-size: 2rem;
@@ -36,32 +38,18 @@
     margin: 15px 0;
     position: relative;
     cursor: pointer;
-    max-width: 90%;
+    max-width: 95%;
 }
 
-.progress-fill {
-    position: absolute;
-    height: 100%;
-    background: #ffd700;
-    border-radius: 3px;
-    transition: width 0.1s linear;
+.progressBarContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
 }
-
-.progress-thumb {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 16px;
-    height: 16px;
-    background: #ffffff;
-    border: 2px solid #f1ca00;
-    border-radius: 50%;
-    cursor: grab;
-}
-
-.progress-thumb:active {
-    cursor: grabbing;
+#progressBar {
+    max-width: 95%;
+    width: 100%;
 }
 
 
@@ -69,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .controls {

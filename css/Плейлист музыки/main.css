@@ -20,21 +20,20 @@
 .descriptionPlaylist {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
-    flex-wrap: wrap;
-    flex:2;
 }
 .backgroundPlaylistText {
     display: flex;
     flex-direction: column;
-    width: 700px;
-    height: 600px;
-    gap:50px;
-    background-color: #7D66A7;
+    max-width: 900px;
+    gap:25px;
+
     padding: 50px 60px;
     justify-content: center;
     border-radius: 5px;
-    border: 10px solid #BF9CFF;
+
+}
+.backgroundPlaylistText > p {
+    font-size: 1.25rem;
 }
 /*Секция 2*/
 .buttonPlaylist {
@@ -92,5 +91,31 @@
     width: 30px;
     height: 30px;
 }
+/*@media (max-width: 1440px) {*/
+/*    .imgPlaylist {*/
+/*        width: 450px;*/
+/*        height: 450px;*/
+/*    }*/
+/*    .backgroundPlaylistText {*/
+/*        height: 450px;*/
+/*    }*/
+/*    .backgroundPlaylistText > p {*/
+/*        font-size: 0.8rem;*/
+/*        width: 450px;*/
+/*        height: 250px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 1024px) {*/
+/*    .imgPlaylist {*/
+/*        width: 250px;*/
+/*        height: 250px;*/
+/*    }*/
+/*    .backgroundPlaylistText {*/
+/*        height: 250px;*/
+/*    }*/
+/*    .backgroundPlaylistText > p {*/
+/*        font-size: 0.5rem;*/
+/*    }*/
+/*}*/
 
 
