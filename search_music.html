@@ -2,8 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Поиск музыки</title>
     <link rel="stylesheet" href="css/Поиск%20музыки/style.css">
@@ -16,22 +14,28 @@
     </a>
     <nav>
         <a href="search_music.html">
-            <img class="iconNav" src="img/Общие_изображения/Лупа.svg" alt="find">
+            <div class="backgroundColourIconNav">
+                <img class="iconNav" src="img/Общие_изображения/Лупа.svg" alt="find">
+            </div>
         </a>
         <a href="#">
-            <img class="iconNav" src="img/Общие_изображения/Список.svg" alt="catalogPlaylist">
+            <div class="backgroundColourIconNav">
+                <img class="iconNav" src="img/Общие_изображения/Список.svg" alt="catalogPlaylist">
+            </div>
         </a>
         <a href="#">
-            <img class="iconNav" src="img/Общие_изображения/Нота.svg" alt="favoriteMusic">
+            <div class="backgroundColourIconNav">
+                <img class="iconNav" src="img/Общие_изображения/Нота.svg" alt="favoriteMusic">
+            </div>
         </a>
     </nav>
-    <a href="#">
+    <a class="userProfile" href="#">
         <img src="img/Общие_изображения/Фото_Профиля.svg" alt="icon-profile">
     </a>
 </header>
 <main class="contentMain">
     <div class="wrapper">
-        <section class="findMusic">
+        <div class="findMusic">
             <form>
                 <div class="searchInputFlex">
                     <label for="searchInput" class="visually-hidden">Поиск по названию и исполнителю</label>
@@ -39,7 +43,7 @@
                     <button class="searchInputButton">Найти</button>
                 </div>
             </form>
-        </section>
+        </div>
         <section class="popularPlaylist">
             <h2>Популярные плейлисты</h2>
             <div class="popularPlaylistRow">
@@ -60,189 +64,171 @@
         <section class="resultSearch">
             <h2>Результаты поиска:</h2>
             <div class="gapTrack">
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Майнкрафт.svg" alt="Майнкрафт">
-                                <div class="cardTrackParagraph">
-                                    <p>Minecraft Theme</p>
-                                    <p>The Harmony Group, Jose Baz</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Майнкрафт.svg" alt="Майнкрафт">
+                            <div class="cardTrackParagraph">
+                                <p>Minecraft Theme</p>
+                                <p>The Harmony Group, Jose Baz</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Экспидиция.svg" alt="Экспедиция">
-                                <div class="cardTrackParagraph">
-                                    <p>Lumiere</p>
-                                    <p>Clair Obscur</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Экспидиция.svg" alt="Экспедиция">
+                            <div class="cardTrackParagraph">
+                                <p>Lumiere</p>
+                                <p>Clair Obscur</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Сайлент_хилл2.svg" alt="Сайлент_хилл2">
-                                <div class="cardTrackParagraph">
-                                    <p>Promise</p>
-                                    <p>The Pink Rabbit</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Сайлент_хилл2.svg" alt="Сайлент_хилл2">
+                            <div class="cardTrackParagraph">
+                                <p>Promise</p>
+                                <p>The Pink Rabbit</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Дмс.svg" alt="Дмс">
-                                <div class="cardTrackParagraph">
-                                    <p>Gimme Deathrace</p>
-                                    <p>Combrichist</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Дмс.svg" alt="Дмс">
+                            <div class="cardTrackParagraph">
+                                <p>Gimme Deathrace</p>
+                                <p>Combrichist</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Бэтман.svg" alt="Бэтмен">
-                                <div class="cardTrackParagraph">
-                                    <p>Arkham Origins Main Titles</p>
-                                    <p>Cristopher Drake</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Бэтман.svg" alt="Бэтмен">
+                            <div class="cardTrackParagraph">
+                                <p>Arkham Origins Main Titles</p>
+                                <p>Cristopher Drake</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Хейдес.svg" alt="Майнкрафт">
-                                <div class="cardTrackParagraph">
-                                    <p>No Escape</p>
-                                    <p>Darren Korb</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Хейдес.svg" alt="Майнкрафт">
+                            <div class="cardTrackParagraph">
+                                <p>No Escape</p>
+                                <p>Darren Korb</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Деад_Целс.svg" alt="Деад_Целс">
-                                <div class="cardTrackParagraph">
-                                    <p>The Merchant</p>
-                                    <p>Yoann Laulan</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Деад_Целс.svg" alt="Деад_Целс">
+                            <div class="cardTrackParagraph">
+                                <p>The Merchant</p>
+                                <p>Yoann Laulan</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Деад_Целс.svg" alt="Деад_Целс">
-                                <div class="cardTrackParagraph">
-                                    <p>Dead Cells</p>
-                                    <p>Yoann Laulan</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Деад_Целс.svg" alt="Деад_Целс">
+                            <div class="cardTrackParagraph">
+                                <p>Dead Cells</p>
+                                <p>Yoann Laulan</p>
                             </div>
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="cardTrack">
-                        <div class="cardTrackRow">
-                            <div class="cardTrackLeft">
-                                <img src="img/Поиск_музыки/Мумми.svg" alt="Мумми">
-                                <div class="cardTrackParagraph">
-                                    <p>Wicked Mummy</p>
-                                    <p>Patric Catony</p>
-                                </div>
-                            </div>
-                            <div class="settingsRow">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
-                                <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
-                                <p class="time">
-                                    2:00
-                                </p>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTrack">
+                    <div class="cardTrackRow">
+                        <div class="cardTrackLeft">
+                            <img src="img/Поиск_музыки/Мумми.svg" alt="Мумми">
+                            <div class="cardTrackParagraph">
+                                <p>Wicked Mummy</p>
+                                <p>Patric Catony</p>
                             </div>
                         </div>
-                    </article>
-                </a>
+                        <div class="settingsRow">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Сердце.svg" alt="like">
+                            <img class="settingsIcon" src="img/Поиск_музыки/Точки.svg" alt="options">
+                            <p class="time">
+                                2:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="pagination">
+        <div class="pagination">
             <div>
                 <a href="#">1</a>
                 <p>
@@ -252,12 +238,12 @@
             <button class="paginationBtn">
                 Продолжить
             </button>
-        </section>
+        </div>
     </div>
 </main>
 <footer class="footerContent">
     <div class="wrapper">
-        <section class="aboutUs">
+        <div class="aboutUs">
             <nav class="aboutUsLinks">
                 <a href="#">Пользовательское соглашение</a>
                 <a href="#">О нас</a>
@@ -270,7 +256,7 @@
                 среди ценителей игровой музыки в 2025 году. Информация предоставляется в ознакомительных целях
                 и может содержать возрастные ограничения.
             </p>
-        </section>
+        </div>
     </div>
 </footer>
 </body>

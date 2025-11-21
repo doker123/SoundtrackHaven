@@ -71,13 +71,15 @@
     align-items: center;
     justify-content: space-between;
     max-width: 90%;
-
 }
 
 .controls {
     display: flex;
     gap: 18px;
     align-items: center;
+    background-color: rgba(241, 241, 255, 0.5);
+    padding: 0.7rem 0.5rem;
+    border-radius: 2rem;
 }
 
 .control-btn {

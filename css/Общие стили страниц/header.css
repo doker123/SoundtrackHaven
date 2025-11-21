@@ -23,21 +23,33 @@
     flex-direction: column;
     flex-basis: 70%;
     gap: 50px;
-    vertical-align: center;
 }
 
 .iconNav {
     width: 2rem;
 }
-
-.iconNav:hover {
-    color: #F5F5F7;
+.backgroundColourIconNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 5px;
+    background-color: #F5F5F7;
+    border-radius: 50%;
+}
+.backgroundColourIconNav:hover {
+    background-color: #c1c0c0;
+}
+.backgroundColourIconNav:active {
+    background-color: #888888;
 }
 
 .userProfile > img {
     width: 100px;
     height: 100px;
 }
+
 
 /*Адаптивность для мобильных устройств*/
 @media (max-width: 600px) {
