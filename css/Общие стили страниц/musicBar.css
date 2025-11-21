@@ -65,7 +65,7 @@
 }
 
 
-.controls-container {
+.controlsContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,11 +124,11 @@
 }
 
 @media (max-width: 768px) {
-    .controls-container {
+    .controlsContainer {
         justify-content: space-around;
         gap: 20px;
     }
-    .controls-container button {
+    .controlsContainer button {
         width: 25px;
         height: 25px;
     }

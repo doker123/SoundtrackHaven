@@ -86,7 +86,7 @@
 }
 
 /*Секция 3*/
-.resultSearch {
+.trackPlaylist {
     display: flex;
     flex-direction: column;
     gap:80px;

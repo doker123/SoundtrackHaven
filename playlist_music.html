@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Поиск музыки</title>
-    <link rel="stylesheet" href="css/Поиск%20музыки/style.css">
+    <title>Assassin's Creed 2</title>
+    <link rel="stylesheet" href="css/Плейлист%20музыки/style.css">
     <link rel="icon" href="img/favicon/favicon.svg">
 </head>
 <body class="bodyIndex">
@@ -36,34 +36,39 @@
 </header>
 <main class="contentMain">
     <div class="wrapper">
-        <div class="findMusic">
-            <form>
-                <div class="searchInputFlex">
-                    <label for="searchInput" class="visually-hidden">Поиск по названию и исполнителю</label>
-                    <input type="search" id="searchInput" name="query" placeholder="Поиск по названию и исполнителю">
-                    <button class="searchInputButton">Найти</button>
+        <section class="descriptionPlaylistSection">
+            <h2>Плейлист Assassin's creed 2</h2>
+            <div class="descriptionPlaylist">
+                <img class="imgPlaylist" src="img/Плейлист_музыки/Assassin's_creed2.svg" alt="playlistImg">
+                <div class="backgroundPlaylistText">
+                    <p>
+                        Assassin's Creed II — это приключенческий экшн с элементами стелс и паркура, действие которого
+                        разворачивается в Италии эпохи Возрождения. Игрок управляет Эцио Auditore, молодым дворянином,
+                        который после убийства отца и братьев втягивается в древнюю войну между ассасинами и и Templars.
+                        В ходе приключения Эцио обучается навыкам скрытности, фехтования и паркура, чтобы раскрыть
+                        заговор,
+                        расширить влияние ассасинов и восстановить честь своей семьи. Игра сочетает в себе захватывающий
+                        сюжет,
+                        свободное исследование исторических локаций, таких как Флоренция, Венеция и Рим, и разнообразный
+                        геймплей,
+                        включая кражи, погони и политические интриги.
+                    </p>
+                    <p>
+                        Музыкальное сопровождение Assassin's Creed II, созданное композитором Jesper Kyd, получило
+                        широкое
+                        признание за свою атмосферность и эпичность. В саундтреке гармонично сочетаются оркестровые
+                        композиции, средневековые и ренессансные мотивы, что идеально подчеркивает атмосферу эпохи
+                        Возрождения. Запоминающаяся тема "Ezio's Family" и другие треки, такие как "Brotherhood", стали
+                        визитной карточкой серии и часто исполняются на концертах классической и видеоигровой музыки.
+                    </p>
                 </div>
-            </form>
-        </div>
-        <section class="popularPlaylist">
-            <h2>Популярные плейлисты</h2>
-            <div class="popularPlaylistRow">
-                <a href="#">
-                    <img class="imgPlaylist" src="img/Поиск_музыки/Ведьмак.svg" alt="Ведьмак">
-                </a>
-                <a href="#">
-                    <img class="imgPlaylist" src="img/Поиск_музыки/Киберпанк.svg" alt="Киберпанк">
-                </a>
-                <a href="#">
-                    <img class="imgPlaylist" src="img/Поиск_музыки/Дуум.svg" alt="Дуум">
-                </a>
-                <a href="#">
-                    <img class="imgPlaylist" src="img/Поиск_музыки/Персона3.svg" alt="Персона3">
-                </a>
             </div>
         </section>
-        <section class="resultSearch">
-            <h2>Результаты поиска:</h2>
+        <div class="audioPlaylist">
+            <button class="buttonPlaylist">Слушать</button>
+        </div>
+        <section class="trackPlaylist">
+            <h2>Треки плейлиста:</h2>
             <div class="gapTrack">
                 <div class="cardTrack">
                     <div class="cardTrackRow">
@@ -229,17 +234,6 @@
                 </div>
             </div>
         </section>
-        <div class="pagination">
-            <div>
-                <a href="#">1</a>
-                <p>
-                    ...
-                </p>
-            </div>
-            <button class="paginationBtn">
-                Продолжить
-            </button>
-        </div>
     </div>
 </main>
 <footer class="footerContent">

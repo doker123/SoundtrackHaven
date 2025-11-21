@@ -1,0 +1,96 @@
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-left: 100px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+/*Секция 1*/
+.descriptionPlaylistSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contentMain  h2,
+.contentMain  p
+{
+    color: #F5F5F7;
+}
+.descriptionPlaylist {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    flex-wrap: wrap;
+    flex:2;
+}
+.backgroundPlaylistText {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 600px;
+    gap:50px;
+    background-color: #7D66A7;
+    padding: 50px 60px;
+    justify-content: center;
+    border-radius: 5px;
+    border: 10px solid #BF9CFF;
+}
+/*Секция 2*/
+.buttonPlaylist {
+    outline: none;
+    background-color: #BF9CFF;
+    color: #F5F5F7;
+    border: none;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    padding: 20px 60px;
+}
+.buttonPlaylist:hover {
+    background-color: #7257a1;
+}
+/*Секция 3*/
+.trackPlaylist {
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+.gapTrack {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.cardTrackRow {
+    display: flex;
+    justify-content: space-between;
+
+}
+.cardTrackLeft {
+    display: flex;
+    gap: 30px;
+
+}
+.cardTrackParagraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.cardTrackParagraph >p:first-child {
+    font-size: 1.3rem;
+}
+.cardTrackParagraph > p:last-child {
+    font-size: 1rem;
+}
+.settingsRow {
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.settingsIcon {
+    width: 30px;
+    height: 30px;
+}
+
+
