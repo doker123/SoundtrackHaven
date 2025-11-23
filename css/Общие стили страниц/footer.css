@@ -1,7 +1,8 @@
 .footerContent {
     background-color: #A67BF5;
     margin-left: 100px;
-    padding-bottom: 150px;
+    padding-top: 30px;
+    padding-bottom:150px ;
 }
 .aboutUs {
     display: flex;

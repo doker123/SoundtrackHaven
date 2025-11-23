@@ -69,7 +69,7 @@
         flex-direction: row;
         flex-basis: auto;
         justify-content: space-around;
-        gap: 20px;
+        gap: 10px;
     }
     .iconHome {
         font-size: 3rem;
@@ -81,5 +81,13 @@
     .userProfile > img {
         width: 5.5rem;
         height: 5.5rem;
+    }
+}
+@media (max-width: 320px) {
+    .generalMenu {
+        gap: 10px;
+    }
+    .userProfile > img {
+        width: 3rem;
     }
 }

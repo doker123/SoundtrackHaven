@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 70px;
     margin-left: 100px;
-    padding-top: 70px;
+    padding-top: 100px;
     margin-bottom: 100px;
 }
 /*Секция 1*/
@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+.imgPlaylist {
+    width: 350px;
 }
 .contentMain  h2,
 .contentMain  p
@@ -20,14 +23,16 @@
 .descriptionPlaylist {
     display: flex;
     justify-content: space-between;
+    align-items: self-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
 }
 .backgroundPlaylistText {
     display: flex;
     flex-direction: column;
     max-width: 900px;
     gap:25px;
-
-    padding: 50px 60px;
     justify-content: center;
     border-radius: 5px;
 
@@ -91,31 +96,67 @@
     width: 30px;
     height: 30px;
 }
-/*@media (max-width: 1440px) {*/
-/*    .imgPlaylist {*/
-/*        width: 450px;*/
-/*        height: 450px;*/
-/*    }*/
-/*    .backgroundPlaylistText {*/
-/*        height: 450px;*/
-/*    }*/
-/*    .backgroundPlaylistText > p {*/
-/*        font-size: 0.8rem;*/
-/*        width: 450px;*/
-/*        height: 250px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 1024px) {*/
-/*    .imgPlaylist {*/
-/*        width: 250px;*/
-/*        height: 250px;*/
-/*    }*/
-/*    .backgroundPlaylistText {*/
-/*        height: 250px;*/
-/*    }*/
-/*    .backgroundPlaylistText > p {*/
-/*        font-size: 0.5rem;*/
-/*    }*/
-/*}*/
+.similarPlaylist {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.imgSimilarPlaylist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 1440px) {
+    .imgSimilarPlaylist > img {
+        width: 250px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .imgSimilarPlaylist > img {
+        width: 150px;
+    }
+}
+@media (max-width: 425px) {
+    .contentMain {
+        margin: 0;
+    }
+    .imgPlaylist {
+        width: 250px;
+    }
+    .backgroundPlaylistText > p {
+        font-size: 0.9rem;
+    }
+    .buttonPlaylist {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+    .imgAlbum {
+        width: 50px;
+    }
+    .cardTrackRow {
+        gap: 10px;
+    }
+    .cardTrackParagraph > p:first-child {
+        font-size: 0.9rem;
+    }
+    .cardTrackParagraph > p:last-child {
+        font-size: 0.7rem;
+    }
+    .settingsIcon {
+        width: 0.9rem;
+    }
+    .time {
+        font-size: 0.9rem;
+    }
+    .imgSimilarPlaylist > img {
+        width: 120px;
+    }
+
+}
+
+
 
 

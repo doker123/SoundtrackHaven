@@ -3,7 +3,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
     background: #BF9CFFFF;
     z-index: 9;
     margin: 0 0 auto 100px;
@@ -16,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 95%;
+    max-width: 99%;
     width: 100%;
 }
 .nameTrack {
@@ -35,20 +34,20 @@
     height: 6px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
-    margin: 15px 0;
+    margin: 5px 0;
     position: relative;
     cursor: pointer;
     max-width: 95%;
 }
 
 .progressBarContainer {
-    width: 100%;
+    width: 99%;
     display: flex;
     align-items: center;
-    margin: 25px auto;
+    margin: 10px auto;
 }
 #progressBar {
-    max-width: 95%;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -57,12 +56,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .controls {
     display: flex;
-    gap: 18px;
+    gap: 10px;
     align-items: center;
     background-color: rgba(241, 241, 255, 0.5);
     padding: 1rem;
@@ -113,7 +112,7 @@
 
 @media (max-width: 768px) {
     .controlsContainer {
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 20px;
     }
     .controlsContainer button {
@@ -132,9 +131,19 @@
         width: 100%;
         margin: 0;
     }
-
+    .buttonsControl {
+        width: 24px;
+        height: 24px;
+    }
+    .nameTrack {
+        font-size: 1.5rem;
+    }
+    .time {
+        font-size: 0.7rem;
+    }
     .controls {
         gap: 10px;
+        padding: 0;
     }
 
     .control-btn {
@@ -143,8 +152,8 @@
         font-size: 14px;
     }
     .control-btn > img {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
     .play-pause {
         width: 23px;

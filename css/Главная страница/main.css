@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 70px;
     margin-left: 100px;
-    padding-top: 70px;
+    padding-top: 100px;
     margin-bottom: 100px;
 }
 .newRealiseGame {
@@ -14,8 +14,8 @@
 }
 .cardsGame {
     display: flex;
-    overflow: auto;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contentMain  h2 {
     font-size: 2rem;
@@ -25,15 +25,18 @@
 {
     color: #F5F5F7;
 }
+
+.cardGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 .cardGame > p {
-    padding: 25px 10px;
-    border-radius: 20px;
-    background-color: rgb(166, 123, 245);
-    z-index: 1;
-    position: relative;
-    bottom: 50px;
-    text-align: center;
-    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
 }
 /*Секция 2*/
 .popularPlaylist {
@@ -43,7 +46,7 @@
 }
 .cardPlaylist {
     display: flex;
-    overflow: auto;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 /*Секция 3*/
@@ -54,7 +57,7 @@
 }
 .cardAuthor {
     display: flex;
-    overflow: auto;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 /*Секция 4*/
@@ -100,6 +103,30 @@
     .cardsGame,.cardPlaylist,.cardAuthor {
         gap: 10px;
     }
+    .imgGame {
+        width: 150px;
+    }
+    .cardTrack {
+        gap: 10px;
+    }
+    .cardGame > p{
+        font-size: 0.8rem;
+    }
+    .contentMain  h2 {
+        font-size: 1.5rem;
+    }
+    .cardPlaylistImg, .cardAuthorImg {
+        width: 90px;
+    }
+    .descriptionTrack > p:first-child {
+        font-size: 1rem;
+    }
+    .descriptionTrack > p:last-child {
+        font-size: 0.8rem;
+    }
+    .cardTrackImg {
+        width: 50px;
+    }
 
 }
 @media (max-width: 600px) {
@@ -107,6 +134,12 @@
     .trekList {
         flex-direction: column;
         gap: 10px;
+    }
+    .cardPlaylist, .cardAuthor {
+        justify-content: center;
+    }
+    .cardsGame {
+        justify-content: center;
     }
     .contentMain {
         margin: 100px 0 100px 0;
