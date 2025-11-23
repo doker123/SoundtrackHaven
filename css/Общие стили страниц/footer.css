@@ -34,4 +34,12 @@
         flex-direction: column;
         gap:10px;
     }
+    .footerContent a {
+        font-size: 0.8rem;
+    }
+    .footerContent p {
+        font-size: 0.7rem;
+    }
+
+
 }
