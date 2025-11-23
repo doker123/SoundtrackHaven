@@ -185,8 +185,7 @@
         height: 200px;
     }
     .popularPlaylistRow {
-        flex-wrap: nowrap;
-        overflow: auto;
+        justify-content: center;
     }
 }
 
@@ -220,6 +219,11 @@
         font-size: 16px;
     }
 }
+@media (max-width: 1024px) {
+    .contentMain h2 {
+        font-size: 1rem;
+    }
+}
 @media (max-width: 600px) {
     .contentMain {
         margin: 0;
@@ -239,5 +243,9 @@
     }
     .cardTrackParagraph > p:last-child {
         font-size: 0.7rem;
+    }
+    .imgAlbum {
+        width: 50px;
+        height: 50px;
     }
 }
