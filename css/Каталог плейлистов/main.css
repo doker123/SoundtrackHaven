@@ -6,3 +6,59 @@
     padding-top: 100px;
     margin-bottom: 100px;
 }
+h2, p {
+    color: #F5F5F7;
+}
+
+.coolPlaylists, .atmosphericPlaylists, .epicPlaylists{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.coolPlaylist, .atmosphericPlaylist, .epicPlaylist{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.coolPlaylist > img, .atmosphericPlaylist > img, .epicPlaylist > img{
+    max-width: 400px;
+    height: auto;
+    min-width: 100px;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.pagination > div {
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.pagination > div > a {
+    color: #F5F5F7;
+}
+.paginationBtn {
+    background: rgba(245, 245, 247, 0);
+    border: none;
+    color: #F5F5F7;
+    align-items: center;
+    text-decoration: underline;
+}
+.paginationBtn:active {
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .coolPlaylist, .atmosphericPlaylist, .epicPlaylist {
+        flex-wrap: wrap;
+
+    }
+    .coolPlaylist > img, .atmosphericPlaylist > img, .epicPlaylist > img {
+        flex: 1 1 calc(50% - 0.5rem)
+    }
+    .contentMain {
+        margin-left: 0;
+    }
+}
