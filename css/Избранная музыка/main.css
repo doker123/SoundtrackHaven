@@ -1,0 +1,8 @@
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-left: 100px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
