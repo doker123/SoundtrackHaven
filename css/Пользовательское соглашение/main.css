@@ -1,0 +1,40 @@
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+li {
+    color: #F5F5F7;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #F5F5F7;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol ol {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .contentMain {
+        margin-left: 0;
+    }
+}

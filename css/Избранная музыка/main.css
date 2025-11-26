@@ -6,3 +6,106 @@
     padding-top: 100px;
     margin-bottom: 100px;
 }
+h2,h3, p {
+    color: #F5F5F7;
+}
+.favoriteMusic {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contentMain  h2 {
+    font-size: 2rem;
+}
+.favoriteMusicGradient {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(#8E51FF, #BC98FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.favoriteMusicGradient > h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+.playButton {
+    outline: none;
+    background-color: #BF9CFF;
+    color: #F5F5F7;
+    border: none;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    padding: 20px 60px;
+}
+.playButton:hover {
+    background-color: #7257a1;
+}
+
+.resultSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.gapTrack {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.cardTrackRow {
+    display: flex;
+    justify-content: space-between;
+}
+.cardTrackLeft {
+    display: flex;
+    gap: 30px;
+}
+.cardTrackParagraph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.settingsRow {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.settingsIcon {
+    width: 30px;
+}
+@media (max-width: 425px) {
+    .contentMain {
+        margin-left: 0;
+    }
+    .favoriteMusicGradient {
+        width: 150px;
+        height: 150px;
+    }
+    .favoriteMusicGradient > h3 {
+        font-size: 1rem;
+    }
+    .playButton {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+    .imgAlbum {
+        width: 50px;
+        height: 50px;
+    }
+    .cardTrackLeft {
+        gap: 10px;
+    }
+    .cardTrackParagraph > p:first-child {
+        font-size: 0.9rem;
+    }
+    .cardTrackParagraph > p:last-child {
+        font-size: 0.7rem;
+    }
+    .settingsIcon {
+        width: 0.9rem;
+    }
+    .time {
+        font-size: 0.9rem;
+    }
+}

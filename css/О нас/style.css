@@ -17,7 +17,9 @@ html {
 a {
     text-decoration: none;
 }
-
+p, h2, li {
+    color: white;
+}
 .wrapper {
     width: 95%;
     max-width: 1640px;
