@@ -35,14 +35,14 @@
     width: 3rem;
     height: 3rem;
     padding: 5px;
-    background-color: #F5F5F7;
+    background-color: #8E51FF;
     border-radius: 50%;
 }
 .backgroundColourIconNav:hover {
-    background-color: #c1c0c0;
+    background-color: #6d5898;
 }
 .backgroundColourIconNav:active {
-    background-color: #888888;
+    background-color: #5825b5;
 }
 
 .userProfile > img {

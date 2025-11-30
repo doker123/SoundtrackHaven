@@ -33,6 +33,12 @@ li {
 .section-title {
     font-weight: bold;
 }
+ol > li > ol {
+    list-style-type: lower-alpha;
+}
+ol > li > ol:only-child {
+    list-style-type: lower-roman;
+}
 @media (max-width: 600px) {
     .contentMain {
         margin-left: 0;
