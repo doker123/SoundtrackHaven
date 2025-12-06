@@ -2,6 +2,12 @@
     font-size: 40pt;
     color: #F5F5F7;
 }
+.iconNav:hover {
+    color: #6d5898;
+}
+.iconHome:active {
+    color: #5825b5;
+}
 
 .generalMenu {
     display: flex;

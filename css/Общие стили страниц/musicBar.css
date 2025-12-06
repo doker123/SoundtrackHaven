@@ -63,7 +63,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    background-color: rgba(241, 241, 255, 0.5);
+    background-color: #8E51FF;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -75,7 +75,7 @@
     justify-content: center;
 }
 .buttonsControl:hover {
-    background: #F5F5F7;
+    background: #6d5898;
     border-radius: 50%;
 }
 
