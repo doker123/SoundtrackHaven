@@ -78,6 +78,9 @@
     background: #6d5898;
     border-radius: 50%;
 }
+.buttonsControl:active {
+    background: #5825B5;
+}
 
 .control-btn {
     background: rgba(255, 255, 255, 0);

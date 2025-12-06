@@ -25,8 +25,11 @@ label {
     padding: 15px 25px;
     border-radius: 5px;
     border: none;
-    outline: none;
     background-color: #BF9CFF;
+}
+
+#nameField:focus, #emailField:focus, #passwordField:focus,#passwordField2:focus {
+    background-color: #6D5898;
 }
 
 #nameField::placeholder, #emailField::placeholder,
@@ -73,10 +76,16 @@ label {
     align-items: center;
     width: 200px;
     height: 50px;
-    background-color: #8B7BEF;
+    background-color: #BF9CFF;
     color: #F5F5F5;
     border: none;
     border-radius: 5px;
+}
+#submitButton:hover {
+    background-color: #6D5898;
+}
+#submitButton:active {
+    background-color: #5825B5;
 }
 .formAuthorization {
     display: flex;
