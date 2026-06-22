@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Поиск музыки</title>
-    <link rel="stylesheet" href="css/Поиск%20музыки/style.css">
+    <link rel="stylesheet" href="css/search/style.css">
     <link rel="icon" href="img/favicon/favicon.svg">
 </head>
 <body class="bodyIndex">
@@ -40,8 +40,8 @@
             <form>
                 <div class="searchInputFlex">
                     <label for="searchInput" class="visually-hidden">Поиск по названию и исполнителю</label>
-                    <input type="search" id="searchInput" name="query" placeholder="Поиск по названию и исполнителю">
-                    <button class="searchInputButton">Найти</button>
+                    <input type="search" id="searchInput" name="query" placeholder="Поиск по названию и исполнителю" aria-label="Поиск по названию и исполнителю">
+                    <button class="searchInputButton" type="button">Найти</button>
                 </div>
             </form>
         </div>
@@ -229,17 +229,17 @@
                 </div>
             </div>
         </section>
-        <div class="pagination">
+        <nav class="pagination" aria-label="Навигация по страницам">
             <div>
-                <a href="#">1</a>
+                <span aria-current="page">1</span>
                 <p>
                     ...
                 </p>
             </div>
-            <button class="paginationBtn">
+            <button class="paginationBtn" type="button">
                 Продолжить
             </button>
-        </div>
+        </nav>
     </div>
 </main>
 <footer class="footerContent">

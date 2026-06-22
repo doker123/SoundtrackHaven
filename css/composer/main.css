@@ -1,0 +1,109 @@
+h2 {
+    color: #F5F5F7;
+    font-size: 2rem;
+}
+.compositor {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cardCompositor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imgCompositor {
+    max-width: 600px;
+    min-width: 100px;
+    height: auto;
+}
+.compositorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lastRealizes > p {
+    font-size: 1.5rem;
+}
+
+.popularTracks {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.popularProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cardTracks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.track > img {
+    max-width: 350px;
+    height: auto;
+    min-width: 150px;
+
+}
+@media (max-width: 425px) {
+    .contentMain {
+        margin-left: 0;
+    }
+    .cardCompositor {
+        justify-content: center;
+    }
+    .cardTracks {
+        justify-content: center;
+        gap: 10px;
+    }
+    .lastRealizes > p {
+        font-size: 1rem;
+    }
+    .playButton {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .track > p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 320px) {
+    .imgPlaylist {
+        width: 150px;
+    }
+    .time {
+        font-size: 0.7rem;
+    }
+    .settingsRow {
+        gap: 1rem;
+    }
+    .settingsIcon{
+        width:1rem;
+        height: 1rem;
+    }
+    .cardTrackParagraph >p:first-child {
+        font-size: 1rem;
+    }
+    .cardTrackParagraph > p:last-child {
+        font-size: 0.7rem;
+    }
+    .imgAlbum {
+        width: 50px;
+        height: 50px;
+    }
+}

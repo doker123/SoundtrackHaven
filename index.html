@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/Главная%20страница/style.css">
+    <link rel="stylesheet" href="css/home/style.css">
     <link rel="icon" href="img/favicon/favicon.svg">
 </head>
 <body class="bodyIndex">
@@ -34,132 +34,126 @@
         <img src="img/Общие_изображения/Фото_Профиля.svg" alt="icon-profile">
     </a>
 </header>
-<main class="contentMain">
-    <section class="audioPlayer" aria-label="Аудиоплеер">
-        <audio id="player" preload="metadata" aria-hidden="true">
-            <source src="music/audio.mp3" type="audio/mpeg">
-            Ваш браузер не поддерживает воспроизведение аудио
-        </audio>
-
-        <div class="nameAndTime">
-            <h3 class="nameTrack">
-                Название трека
-            </h3>
-            <p class="time">
-                00:00/3:00
-            </p>
-        </div>
-        <div class="progressBarContainer">
-            <label for="progressBar" ></label>
-            <input type="range" id="progressBar" name="progressBar">
-        </div>
-
-        <div class="controlsContainer">
-            <div class="controls">
-                <div class="buttonsControl">
-                    <button class="control-btn shuffle" aria-label="Перемешать треки" title="Перемешать">
-                        <img src="img/Аудио_плеер/arrows.svg" alt="arrows">
-                    </button>
-                </div>
-                <div class="buttonsControl">
-                    <button class="control-btn prev" aria-label="Предыдущий трек" title="Предыдущий">
-                        <img src="img/Аудио_плеер/back.svg" alt="back">
-                    </button>
-                </div>
-                <div class="buttonsControl">
-                    <button class="control-btn play-pause" aria-label="Воспроизвести" title="Воспроизвести/Пауза">
-                        <img src="img/Аудио_плеер/pause.svg" alt="pause">
-                    </button>
-                </div>
-                <div class="buttonsControl">
-                    <button class="control-btn next" aria-label="Следующий трек" title="Следующий">
-                        <img src="img/Аудио_плеер/next.svg" alt="next">
-                    </button>
-                </div>
-                <div class="buttonsControl">
-                    <button class="control-btn repeat" aria-label="Повторить трек" title="Повтор">
-                        <img src="img/Аудио_плеер/refresh.svg" alt="refresh">
-                    </button>
-                </div>
-                <div class="buttonsControl">
-                    <button class="control-btn like" aria-label="Добавить в избранное" title="Нравится">
-                        <img src="img/Аудио_плеер/like.svg" alt="like">
-                    </button>
-                </div>
+<section class="audioPlayer" aria-label="Аудиоплеер">
+    <audio id="player" preload="metadata" aria-hidden="true">
+        <source src="music/audio.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает воспроизведение аудио
+    </audio>
+    <div class="nameAndTime">
+        <h3 class="nameTrack">Название трека</h3>
+        <p class="time">00:00/3:00</p>
+    </div>
+    <div class="progressBarContainer">
+        <input type="range" id="progressBar" name="progressBar" aria-label="Прогресс трека">
+    </div>
+    <div class="controlsContainer">
+        <div class="controls">
+            <div class="buttonsControl">
+                <button class="control-btn shuffle" aria-label="Перемешать треки" title="Перемешать">
+                    <img src="img/Аудио_плеер/arrows.svg" alt="arrows">
+                </button>
             </div>
             <div class="buttonsControl">
-                <button class="control-btn volume-icon" aria-label="Регулировка громкости" title="Громкость">
-                    <img src="img/Аудио_плеер/value.svg" alt="value">
+                <button class="control-btn prev" aria-label="Предыдущий трек" title="Предыдущий">
+                    <img src="img/Аудио_плеер/back.svg" alt="back">
+                </button>
+            </div>
+                <div class="buttonsControl">
+                    <button class="control-btn play-pause" aria-label="Воспроизвести" title="Воспроизвести/Пауза">
+                        <img class="icon-play" src="img/Аудио_плеер/play.svg" alt="play">
+                        <img class="icon-pause" src="img/Аудио_плеер/pause.svg" alt="pause">
+                    </button>
+                </div>
+            <div class="buttonsControl">
+                <button class="control-btn next" aria-label="Следующий трек" title="Следующий">
+                    <img src="img/Аудио_плеер/next.svg" alt="next">
+                </button>
+            </div>
+            <div class="buttonsControl">
+                <button class="control-btn repeat" aria-label="Повторить трек" title="Повтор">
+                    <img src="img/Аудио_плеер/refresh.svg" alt="refresh">
+                </button>
+            </div>
+            <div class="buttonsControl">
+                <button class="control-btn like" aria-label="Добавить в избранное" title="Нравится">
+                    <img src="img/Аудио_плеер/like.svg" alt="like">
                 </button>
             </div>
         </div>
-    </section>
+        <div class="buttonsControl">
+            <button class="control-btn volume-icon" aria-label="Регулировка громкости" title="Громкость">
+                <img src="img/Аудио_плеер/value.svg" alt="value">
+            </button>
+        </div>
+    </div>
+</section>
+<main class="contentMain">
     <div class="wrapper">
         <section class="newRealiseGame">
             <h2>Новые релизы игр</h2>
-            <div class="cardsGame">
+                <div class="cardsGame">
                 <div class="cardGame">
-                    <img class="imgGame" src="img/Главная_страница/Silksong.svg" alt="photo_silksong">
+                    <img class="imgGame" src="img/Главная_страница/Silksong.svg" alt="Hollow Knight: Silksong">
                     <p>Hollow Knight: Silksong</p>
                 </div>
                 <div class="cardGame">
-                    <img class="imgGame" src="img/Главная_страница/Silent_hill_f.svg" alt="photo_silksong">
+                    <img class="imgGame" src="img/Главная_страница/Silent_hill_f.svg" alt="Silent Hill f">
                     <p>Silent Hill f</p>
                 </div>
                 <div class="cardGame">
 
-                    <img class="imgGame" src="img/Главная_страница/Daying_light.svg" alt="photo_silksong">
+                    <img class="imgGame" src="img/Главная_страница/Daying_light.svg" alt="Dying Light: The Beast">
                     <p>Dying light the beast</p>
                 </div>
                 <div class="cardGame">
-                    <img class="imgGame" src="img/Главная_страница/Battlefield_6.svg" alt="photo_silksong">
-                    <p>Batlefield 6</p>
+                    <img class="imgGame" src="img/Главная_страница/Battlefield_6.svg" alt="Battlefield 6">
+                    <p>Battlefield 6</p>
                 </div>
             </div>
         </section>
         <section class="popularPlaylist">
             <h2>Популярные плейлисты игровой музыки</h2>
             <div class="cardPlaylist">
-                <a>
-                    <img class="cardPlaylistImg" src="img/Главная_страница/Ведьмак.svg" alt="Ведьмак3">
+                <a href="#">
+                    <img class="cardPlaylistImg" src="img/Главная_страница/Ведьмак.svg" alt="Ведьмак 3">
                 </a>
-                <a>
-                    <img class="cardPlaylistImg" src="img/Главная_страница/Геншин.svg" alt="Геншин">
+                <a href="#">
+                    <img class="cardPlaylistImg" src="img/Главная_страница/Геншин.svg" alt="Genshin Impact">
                 </a>
-                <a>
-                    <img class="cardPlaylistImg" src="img/Главная_страница/Скайрим.svg" alt="Скайрим">
+                <a href="#">
+                    <img class="cardPlaylistImg" src="img/Главная_страница/Скайрим.svg" alt="Skyrim">
                 </a>
-                <a>
-                    <img class="cardPlaylistImg" src="img/Главная_страница/Вампиры.svg" alt="Вампиры">
+                <a href="#">
+                    <img class="cardPlaylistImg" src="img/Главная_страница/Вампиры.svg" alt="V Rising">
                 </a>
-                <a>
-                    <img class="cardPlaylistImg" src="img/Главная_страница/Хотлайн.svg" alt="Хотлайн Майами">
+                <a href="#">
+                    <img class="cardPlaylistImg" src="img/Главная_страница/Хотлайн.svg" alt="Hotline Miami">
                 </a>
-                <a>
-                    <img class="cardPlaylistImg" src="img/Главная_страница/МеталГир.svg" alt="Mgr">
+                <a href="#">
+                    <img class="cardPlaylistImg" src="img/Главная_страница/МеталГир.svg" alt="Metal Gear Rising">
                 </a>
             </div>
         </section>
         <section class="authorMusic">
             <h2>Популярные плейлисты игровой музыки</h2>
             <div class="cardAuthor">
-                <a>
-                    <img class="cardAuthorImg" src="img/Главная_страница/Мик_Гордон.svg" alt="Ведьмак3">
+                <a href="#">
+                    <img class="cardAuthorImg" src="img/Главная_страница/Мик_Гордон.svg" alt="Мик Гордон">
                 </a>
-                <a>
-                    <img class="cardAuthorImg" src="img/Главная_страница/Акира_Ямаока.svg" alt="Геншин">
+                <a href="#">
+                    <img class="cardAuthorImg" src="img/Главная_страница/Акира_Ямаока.svg" alt="Акира Ямаока">
                 </a>
-                <a>
-                    <img class="cardAuthorImg" src="img/Главная_страница/Джейми_Кристоферсон.svg" alt="Скайрим">
+                <a href="#">
+                    <img class="cardAuthorImg" src="img/Главная_страница/Джейми_Кристоферсон.svg" alt="Джейми Кристоферсон">
                 </a>
-                <a>
-                    <img class="cardAuthorImg" src="img/Главная_страница/Нобуо_Уэмацу.svg" alt="Хотлайн Майами">
+                <a href="#">
+                    <img class="cardAuthorImg" src="img/Главная_страница/Нобуо_Уэмацу.svg" alt="Нобуо Уэмацу">
                 </a>
-                <a>
-                    <img class="cardAuthorImg" src="img/Главная_страница/Кирилл_Покровский.svg" alt="Mgr">
+                <a href="#">
+                    <img class="cardAuthorImg" src="img/Главная_страница/Кирилл_Покровский.svg" alt="Кирилл Покровский">
                 </a>
-                <a>
-                    <img class="cardAuthorImg" src="img/Главная_страница/Джаспер_Куд.svg" alt="Mgr">
+                <a href="#">
+                    <img class="cardAuthorImg" src="img/Главная_страница/Джаспер_Куд.svg" alt="Jesper Kyd">
                 </a>
             </div>
         </section>
@@ -228,28 +222,28 @@
                 </div>
                 <div class="trekList">
                     <div class="cardTrack">
-                        <img class="cardTrackImg" src="img/Главная_страница/Hotline.svg" alt="Disturbed">
+                        <img class="cardTrackImg" src="img/Главная_страница/Hotline.svg" alt="Hotline Miami">
                         <div class="descriptionTrack">
                             <p>Metroil</p>
                             <p>Николас Окерблад</p>
                         </div>
                     </div>
                     <div class="cardTrack">
-                        <img class="cardTrackImg" src="img/Главная_страница/Lies_of_p.svg" alt="Assassin">
+                        <img class="cardTrackImg" src="img/Главная_страница/Lies_of_p.svg" alt="Lies of P">
                         <div class="descriptionTrack">
                             <p>Feel</p>
                             <p>Lies of P</p>
                         </div>
                     </div>
                     <div class="cardTrack">
-                        <img class="cardTrackImg" src="img/Главная_страница/dead_cells.svg" alt="Nobody">
+                        <img class="cardTrackImg" src="img/Главная_страница/dead_cells.svg" alt="Dead Cells">
                         <div class="descriptionTrack">
                             <p>The Merchant</p>
                             <p>Yoann Laulan</p>
                         </div>
                     </div>
                     <div class="cardTrack">
-                        <img class="cardTrackImg" src="img/Главная_страница/Prince_of_Persia.svg" alt="Isaac">
+                        <img class="cardTrackImg" src="img/Главная_страница/Prince_of_Persia.svg" alt="Prince of Persia">
                         <div class="descriptionTrack">
                             <p>Dohaca</p>
                             <p>Стюарт Чатвуд</p>
@@ -278,5 +272,6 @@
         </div>
     </div>
 </footer>
+<script src="js/player.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+h2, p {
+    color: #F5F5F7;
+}
+
+.coolPlaylists, .atmosphericPlaylists, .epicPlaylists{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.coolPlaylist, .atmosphericPlaylist, .epicPlaylist{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.coolPlaylist > img, .atmosphericPlaylist > img, .epicPlaylist > img{
+    max-width: 400px;
+    height: auto;
+    min-width: 100px;
+}
+
+@media (max-width: 600px) {
+    .coolPlaylist, .atmosphericPlaylist, .epicPlaylist {
+        flex-wrap: wrap;
+
+    }
+    .coolPlaylist > img, .atmosphericPlaylist > img, .epicPlaylist > img {
+        flex: 1 1 calc(50% - 0.5rem)
+    }
+}

@@ -1,0 +1,135 @@
+.newRealiseGame {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardsGame {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contentMain  h2 {
+    font-size: 2rem;
+}
+.contentMain  h2,
+.contentMain  p
+{
+    color: #F5F5F7;
+}
+
+.cardGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.cardGame > p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+}
+.popularPlaylist {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardPlaylist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.authorMusic {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cardAuthor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trekLists {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.trekListRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trekList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cardTrack {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.descriptionTrack {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.descriptionTrack >p:first-child {
+    font-size: 1.13rem;
+}
+.descriptionTrack > p:last-child {
+    font-size: 1rem;
+}
+@media (max-width: 1300px) {
+    .trekListRow,
+    .trekList {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .cardsGame,.cardPlaylist,.cardAuthor {
+        gap: 10px;
+    }
+    .imgGame {
+        width: 150px;
+    }
+    .cardTrack {
+        gap: 10px;
+    }
+    .cardGame > p{
+        font-size: 0.8rem;
+    }
+    .contentMain  h2 {
+        font-size: 1.5rem;
+    }
+    .cardPlaylistImg, .cardAuthorImg {
+        width: 90px;
+    }
+    .descriptionTrack > p:first-child {
+        font-size: 1rem;
+    }
+    .descriptionTrack > p:last-child {
+        font-size: 0.8rem;
+    }
+    .cardTrackImg {
+        width: 50px;
+    }
+
+}
+@media (max-width: 600px) {
+    .trekListRow,
+    .trekList {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cardPlaylist, .cardAuthor {
+        justify-content: center;
+    }
+    .cardsGame {
+        justify-content: center;
+    }
+    .contentMain {
+        margin: 100px 0 100px 0;
+    }
+}

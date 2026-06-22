@@ -1,0 +1,7 @@
+@import "../common/base.css";
+@import "../common/components.css";
+@import "main.css";
+
+p, h2, li {
+    color: white;
+}
